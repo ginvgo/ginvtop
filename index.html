@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的个人网站</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html" class="active">主页</a></li>
+                    <li><a href="articles.html">文章</a></li>
+                    <li><a href="resources.html">资源文件</a></li>
+                    <li><a href="calculator.html">计算器</a></li>
+                    <li><a href="tools.html">工具</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>欢迎来到我的网站</h2>
+            <p>这里是我分享知识、资源和工具的地方</p>
+        </section>
+
+        <section class="content">
+            <div class="card">
+                <h3>最新文章</h3>
+                <div id="latest-articles">
+                    <!-- 文章内容将通过JavaScript动态加载 -->
+                    <p>加载中...</p>
+                </div>
+                <a href="articles.html" class="btn">查看全部</a>
+            </div>
+
+            <div class="card">
+                <h3>常用工具</h3>
+                <ul>
+                    <li><a href="calculator.html">简易计算器</a></li>
+                    <li><a href="tools.html">更多工具</a></li>
+                </ul>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的个人网站 - 保留所有权利</p>
+        </div>
+    </footer>
+</body>
+</html>

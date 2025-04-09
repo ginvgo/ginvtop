@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>计算器 - 我的个人网站</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js" defer></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的个人网站</h1>
+            <nav>
+                <ul>
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="articles.html">文章</a></li>
+                    <li><a href="resources.html">资源文件</a></li>
+                    <li><a href="calculator.html" class="active">计算器</a></li>
+                    <li><a href="tools.html">工具</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <section class="hero">
+            <h2>在线计算器</h2>
+            <p>简单易用的计算工具</p>
+        </section>
+
+        <section class="content">
+            <div class="calculator">
+                <div class="calculator-display">0</div>
+                <div class="calculator-keys">
+                    <button class="calculator-key calculator-key--operator" value="+">+</button>
+                    <button class="calculator-key calculator-key--operator" value="-">-</button>
+                    <button class="calculator-key calculator-key--operator" value="*">×</button>
+                    <button class="calculator-key calculator-key--operator" value="/">÷</button>
+
+                    <button class="calculator-key" value="7">7</button>
+                    <button class="calculator-key" value="8">8</button>
+                    <button class="calculator-key" value="9">9</button>
+
+                    <button class="calculator-key" value="4">4</button>
+                    <button class="calculator-key" value="5">5</button>
+                    <button class="calculator-key" value="6">6</button>
+
+                    <button class="calculator-key" value="1">1</button>
+                    <button class="calculator-key" value="2">2</button>
+                    <button class="calculator-key" value="3">3</button>
+
+                    <button class="calculator-key" value="0">0</button>
+                    <button class="calculator-key calculator-key--decimal" value=".">.</button>
+                    <button class="calculator-key calculator-key--clear" value="clear">C</button>
+                    
+                    <button class="calculator-key calculator-key--equal" value="=">=</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的个人网站 - 保留所有权利</p>
+        </div>
+    </footer>
+</body>
+</html>
