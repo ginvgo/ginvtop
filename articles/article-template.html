@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title id="article-title">文章标题 - 我的个人网站</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script type="module">
+        // 从URL获取文章ID
+        const urlParams = new URLSearchParams(window.location.search);
+        const articleId = urlParams.get('id');
+        
+        if (articleId) {
+            try {
+                // 在实际应用中，这里会从 GitHub 仓库获取数据
+                fetch('../data/content.json')
+                    .then(response => response.json())
+                    .then(data => {
+                        const article = data.articles.find(a => a.id === articleId);
+                        
+                        if (article) {
+                            // 更新页面标题
+                            document.title = `${article.title} - 我的个人网站`;
+                            document.getElementById('article-title').textContent = article.title;
+                            
+                            // 填充文章内容
+                            const articleContent = document.getElementById('article-content');
+                            articleContent.innerHTML = article.content;
+                            
+                            // 更新文章元数据
+                            document.getElementById('article-date').textContent = article.date;
+                        } else {
+                            showError('找不到请求的文章');
+                        }
+                    })
+                    .catch(error => {
+                        console.error('加载文章失败:', error);
+                        showError('加载文章时出错');
+                    });
+            } catch (error) {
+                console.error('处理文章数据时出错:', error);
+                showError('处理文章数据时出错');
+            }
+        } else {
+            showError('未指定文章ID');
+        }
+        
+        function showError(message) {
+            const articleContainer = document.getElementById('article-container');
+            articleContainer.innerHTML = `
+                <div class="error-message">
+                    <h3>出错了！</h3>
+                    <p>${message}</p>
+                    <a href="../articles.html" class="btn">返回文章列表</a>
+                </div>
+            `;
+        }
+    </script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>我的个人网站</h1>
+            <nav>
+                <ul>
+                    <li><a href="../index.html">主页</a></li>
+                    <li><a href="../articles.html" class="active">文章</a></li>
+                    <li><a href="../resources.html">资源文件</a></li>
+                    <li><a href="../calculator.html">计算器</a></li>
+                    <li><a href="../tools.html">工具</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="article-container" id="article-container">
+            <article class="article-full">
+                <header>
+                    <h1 id="article-title">加载中...</h1>
+                    <div class="article-meta">发布时间：<span id="article-date">加载中...</span></div>
+                </header>
+                
+                <div class="article-content" id="article-content">
+                    <p>加载中...</p>
+                </div>
+                
+                <footer>
+                    <a href="../articles.html" class="btn">返回文章列表</a>
+                </footer>
+            </article>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 我的个人网站 - 保留所有权利</p>
+        </div>
+    </footer>
+</body>
+</html>
