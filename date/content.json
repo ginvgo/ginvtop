@@ -1,0 +1,85 @@
+{
+  "articles": [
+    {
+      "id": "welcome",
+      "title": "网站上线啦！",
+      "date": "2025-04-09",
+      "summary": "今天我的个人网站正式上线，这是一个重要的里程碑...",
+      "content": "<h1>网站上线啦！</h1><p>亲爱的访客，欢迎来到我的个人网站！</p><p>这个网站将成为我分享知识、经验和见解的平台。在这里，你可以找到各种实用的资源、工具和文章。</p><p>我会定期更新内容，希望这个小小的网络空间能为你带来价值和帮助。</p><p>如果你有任何建议或反馈，欢迎随时联系我。</p><p>感谢你的访问！</p>"
+    },
+    {
+      "id": "calculator-guide",
+      "title": "如何使用本站的计算器功能",
+      "date": "2025-04-08",
+      "summary": "本文将介绍如何使用本站提供的多功能计算器...",
+      "content": "<h1>如何使用本站的计算器功能</h1><p>本站提供了一个简单易用的在线计算器，可以帮助你进行日常计算。</p><h2>基本操作</h2><p>1. 点击数字按钮输入数值</p><p>2. 使用运算符按钮（+、-、×、÷）选择运算方式</p><p>3. 按下等号（=）获取结果</p><p>4. 使用清除按钮（C）重置计算器</p><h2>使用技巧</h2><p>- 可以连续进行计算，结果会自动用于下一步运算</p><p>- 小数点按钮可以输入浮点数</p><p>希望这个计算器能在你的日常工作和学习中提供便利！</p>"
+    },
+    {
+      "id": "online-tools",
+      "title": "推荐几款实用的在线工具",
+      "date": "2025-04-07",
+      "summary": "在互联网时代，有许多优秀的在线工具可以提高我们的工作效率...",
+      "content": "<h1>推荐几款实用的在线工具</h1><p>在这个信息爆炸的时代，合适的工具可以极大地提高我们的工作效率。以下是我精心挑选的几款实用在线工具：</p><h2>1. 图片处理工具</h2><p>无需安装专业软件，在线即可完成基本的图片编辑和处理。</p><h2>2. 文档转换工具</h2><p>支持各种文档格式之间的互相转换，方便文件共享和阅读。</p><h2>3. 在线笔记工具</h2><p>随时随地记录灵感和想法，并可在多设备之间同步。</p><p>后续我会陆续推出这些工具的详细使用教程，敬请期待！</p>"
+    }
+  ],
+  "resources": [
+    {
+      "id": "website-guide",
+      "name": "网站使用指南.pdf",
+      "type": "PDF",
+      "size": "1.2 MB",
+      "description": "详细介绍本网站各项功能的使用方法",
+      "path": "resources/website-guide.pdf"
+    },
+    {
+      "id": "tools-collection",
+      "name": "常用工具合集.zip",
+      "type": "ZIP",
+      "size": "5.8 MB",
+      "description": "包含多款实用的小工具和脚本",
+      "path": "resources/tools-collection.zip"
+    },
+    {
+      "id": "learning-materials",
+      "name": "学习资料.docx",
+      "type": "DOCX",
+      "size": "0.8 MB",
+      "description": "整理的学习笔记和参考资料",
+      "path": "resources/learning-materials.docx"
+    }
+  ],
+  "tools": [
+    {
+      "id": "calculator",
+      "name": "计算器",
+      "description": "简单易用的在线计算器",
+      "icon": "calculator-icon.png",
+      "url": "calculator.html",
+      "status": "active"
+    },
+    {
+      "id": "todo",
+      "name": "待办事项",
+      "description": "管理你的任务和日程",
+      "icon": "todo-icon.png",
+      "url": "#",
+      "status": "coming-soon"
+    },
+    {
+      "id": "unit-converter",
+      "name": "单位转换",
+      "description": "各种单位的快速转换工具",
+      "icon": "converter-icon.png",
+      "url": "#",
+      "status": "coming-soon"
+    },
+    {
+      "id": "notepad",
+      "name": "在线笔记本",
+      "description": "随时记录你的想法",
+      "icon": "notepad-icon.png",
+      "url": "#",
+      "status": "coming-soon"
+    }
+  ]
+}
